@@ -1,5 +1,7 @@
 # stab-query-segment-tree
-A heap based implementation of a segment tree, optimized to make cheap stab queries in O(log(n)) time.
+A heap based implementation of a segment tree, optimized to make cheap stab queries in O(log(n)) time. 
+Implemented design from Lei Wang and Xiaodong Wang (2018) paper "A Simple and Space Efficient Segment Tree Implementation" - https://arxiv.org/pdf/1807.05356.pdf
+
 
 ## Problem:
 
