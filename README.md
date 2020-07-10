@@ -45,6 +45,7 @@ number of overlapping segments given a integer position.
 
 Using a segment tree (binary tree that stores segment information in its inherent structure) should allow us to count the number of overlapping intervals in O(k + log(n)) time, where n is the number of distinct intervals (smaller than our N segments) and k is the number of retrieved intervals during a query. In this case, the height of our tree which is log(n), giving us O(2log(n)) -> O(log(n)) cost per query. We would also have to store each node object’s attributes for left and right children and counts and intervals.
 
+### Just a little more!
 However, we can do a little better by using a heap structure, we can avoid storing any structure and just navigate our tree by some “Fun” Heap Math! (jazz hands). Instead we can store the values in an arbitrary data structure for later access based on its node index. we will use an array. By doing this, we can reduce the storage cost of the tree down to a 2n-1 size array to store counts, an n size array for the points values, and each stab query down to O(log(n)), I believe is the optimal possible query cost.
 
 
